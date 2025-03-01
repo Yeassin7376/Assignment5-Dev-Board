@@ -9,13 +9,62 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-<header>
+<body id="body" class="bg-blue-100 pt-5 pb-7">
+    <header class="w-11/12 mx-auto mb-5 bg-white rounded-2xl">
+        <nav class="flex justify-between items-center p-5">
+            <div class="flex items-center gap-2 cursor-pointer">
+                <img class="w-12 h-12"  src="./assets/logo.png" alt="">
+                <h1 class="text-3xl">Dev<span class="font-extrabold">Board</span></h1>
+            </div>
+            <div class="flex items-center gap-9">
+                <div class="flex items-center gap-2">
+                    <img class="w-8 h-8 cursor-pointer" src="./assets/checkbox.png" alt="">
+                    <h1 class="text-2xl font-bold">23</h1>
+                </div>
+                <img id="theme-btn" class="w-10 h-10 cursor-pointer" src="./assets/theme-btn.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <main class="w-11/12 mx-auto flex gap-5">
+        <section class="flex-1 p-6 bg-white rounded-2xl">
+            <div class="grid grid-cols-4 gap-6">
+                <div class="col-span-1 flex justify-center items-center gap-5 py-5 bg-[#F4F7FF] rounded-xl">
+                    <div class="w-16 h-16 bg-white rounded-full flex justify-center items-center">
+                        <img class="w-7 h-7" src="./assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium text-[#00303C]">Task Assigned</p>
+                        <h1 class="text-3xl font-bold text-[#00303C]">05</h1>
+                    </div>
+                </div>
+                <div class="col-span-2 flex items-center gap-6 pl-10 rounded-xl text-white bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
+                    <div>
+                        <img class="w-20 h-20" src="./assets/board.png" alt="">
+                    </div>
+                    <div class="text-2xl font-medium">
+                        <p>Discover Something </p>
+                        <p>New Today!</p>
+                    </div>
+                </div>
+                <div class="col-span-1 flex justify-center items-center gap-5 p-5 bg-[#F4F7FF] rounded-xl">
+                    <div class="w-16 h-16 bg-white rounded-full flex justify-center items-center">
+                        <img class="w-7 h-7" src="./assets/calender.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-xl">Wed ,</p>
+                        <p class="text-xl font-bold text-[#00303C]">Jul 28 2025 </p>
+                    </div>
+                </div>
+            </div>
 
-</header>
-<main>
-    
-</main>
+        </section>
+        <aside class="w-1/5  bg-white rounded-2xl">
+
+        </aside>
+
+    </main>
+
+    <script src="./js/theme.js"></script>
 </body>
 
 </html>
