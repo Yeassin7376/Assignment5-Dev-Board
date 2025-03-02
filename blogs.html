@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloges</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-blue-100 pt-5 pb-7 ">
+    <header class="w-11/12 mx-auto mb-5 p-5 bg-white rounded-2xl flex justify-between items-center">
+        <div class="flex items-center gap-2 cursor-pointer">
+            <img class="w-12 h-12" src="./assets/logo.png" alt="">
+            <h1 class="text-3xl">Dev<span class="font-extrabold">Board</span></h1>
+        </div>
+        <div>
+            <button id="backDesk-btn" class="btn btn-primary">Back to Desk</button>
+        </div>
+    </header>
+    <div class="flex justify-center mb-6">
+
+        <h1 class="text-3xl font-bold ">Bloges</h1>
+    </div>
+    <main class="w-11/12 mx-auto mb-5 space-y-6">
+        <div class="p-5 text-xl bg-white rounded-lg">
+            <p class="font-semibold">Question-1: What are the different ways to select an element in the DOM?</p>
+            <hr class="my-4 border-dashed border-gray-400">
+            <p class="text-gray-500">DOM- এ একটা উপাদান নির্বাচন করার পাঁচটি উপায় রয়েছে - <br>
+                (1)document.getElementById("idName");<br>
+                (2)document.getElementsByClassName("className");<br>
+                (3)document.getElementsByTagName("tagName");<br>
+                (4)document.querySelector("cssSelector");<br>
+                (5)document.querySelectorAll("cssSelector");
+            </p>
+        </div>
+        <div class="p-5 text-xl bg-white rounded-lg">
+            <p class="font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <hr class="my-4 border-dashed border-gray-400">
+            <p class="text-gray-500">innerHTML, innerText এবং textContent এর মধ্যে পার্থক্য দেওয়া হল <br>
+                (1) innerHTML- এটি এলিমেন্টের ভিতরের HTML কনটেন্ট গ্রহণ করে এবং সেট করে <br>
+                (2) innerText- এটি এলিমেন্টের দৃশ্যমান text content গ্রহণ বা সেট করে <br>
+                (3) textContent- এটি এলিমেন্ট এর সিএসএস স্টাইল ছাড়া শুধুমাত্র টেক্সকে রিটার্ন করে
+            </p>
+        </div>
+        <div class="p-5 text-xl bg-white rounded-lg">
+            <p class="font-semibold">Question-3: What is event delegation in the DOM?</p>
+            <hr class="my-4 border-dashed border-gray-400">
+            <p class="text-gray-500">ইভেন্ট ডেলিগেশন একটা পদ্ধতি
+                যা ইভেন্ট হ্যান্ডলিংকে আরও সহজ করে , বিশেষত যখন অনেক element নিয়ে কাজ করতে হয় বা ডাইনামিক DOM উপাদান যুক্ত করা হয়।</p>
+        </div>
+        <div class="p-5 text-xl bg-white rounded-lg">
+            <p class="font-semibold">Question-4: What is event bubbling in the DOM?</p>
+            <hr class="my-4 border-dashed border-gray-400">
+            <p class="text-gray-500">Event Bubbling হল একটি পদ্ধতি যেখানে একটা
+                ইভেন্ট target এলিমেন্ট থেকে শুরু হয়ে তার প্যারেন্ট এলিমেন্টগুলির দিকে বুদবুদ করে চলে</p>
+        </div>
+        <div class="p-5 text-xl bg-white rounded-lg">
+            <p class="font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <hr class="my-4 border-dashed border-gray-400">
+            <p class="text-gray-500">
+                নতুন HTML element তৈরি করতে document.createElement() মেথড ব্যবহার করি<br>
+                Element যোগ করতে appendChild() বা insertBefore() মেথড ব্যবহার করি <br>
+                Element remove করতে removeChild() মেথড ব্যবহার করি
+            </p>
+        </div>
+    </main>
+
+
+    <script>
+        // back to Desk-btn
+        document.getElementById("backDesk-btn")
+            .addEventListener("click", function (event) {
+                window.location.href = 'index.html';
+            })
+    </script>
+</body>
+
+</html>

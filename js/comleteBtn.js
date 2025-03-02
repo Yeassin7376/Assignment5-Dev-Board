@@ -42,3 +42,11 @@ document.getElementById("clear-history-btn")
         const activityLog = document.getElementById('Activity-Log');
         activityLog.innerHTML = "";
 })
+
+// Discover Something card 
+document.getElementById("Discover")
+    .addEventListener("click", function(event){
+        window.location.href = 'blogs.html';
+    })
+
+
