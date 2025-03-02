@@ -19,7 +19,7 @@
             <div class="flex items-center gap-9">
                 <div class="flex items-center gap-2 py-2 px-3 bg-gray-200 rounded-[32px]">
                     <img class="w-8 h-8 cursor-pointer" src="./assets/checkbox.png" alt="">
-                    <h1 class="text-2xl font-bold">23</h1>
+                    <h1 id="completed-task" class="text-2xl font-bold">23</h1>
                 </div>
                 <img id="theme-btn" class="w-10 h-10 cursor-pointer" src="./assets/theme-btn.png" alt="">
             </div>
@@ -28,13 +28,13 @@
     <main class="w-11/12 mx-auto flex gap-5">
         <section class="flex-1 pt-6 pb-8 bg-white rounded-2xl">
             <div class="grid grid-cols-4 gap-6 mb-5 px-6">
-                <div class="col-span-1 flex justify-center items-center gap-5 py-5 bg-[#F4F7FF] rounded-xl">
+                <div class="col-span-1 flex pl-6 items-center gap-5 py-5 bg-[#F4F7FF] rounded-xl">
                     <div class="w-16 h-16 bg-white rounded-full flex justify-center items-center">
                         <img class="w-7 h-7" src="./assets/checkbox.png" alt="">
                     </div>
                     <div>
                         <p class="font-medium text-[#00303C]">Task Assigned</p>
-                        <h1 id="Task-count" class="text-3xl font-bold text-[#00303C]">05</h1>
+                        <h1 id="Task-count" class="text-3xl font-bold text-[#00303C]">06</h1>
                     </div>
                 </div>
                 <div
@@ -47,7 +47,7 @@
                         <p>New Today!</p>
                     </div>
                 </div>
-                <div class="col-span-1 flex justify-center items-center gap-5 p-5 bg-[#F4F7FF] rounded-xl">
+                <div class="col-span-1 flex  items-center gap-5 p-5 bg-[#F4F7FF] rounded-xl">
                     <div class="w-16 h-16 bg-white rounded-full flex justify-center items-center">
                         <img class="w-7 h-7" src="./assets/calender.png" alt="">
                     </div>
@@ -189,9 +189,12 @@
                     <div><img class="w-6 h-6" src="./assets/activity.png" alt=""></div>
                     <h1 class="text-xl font-medium text-[#00303C]">Activity Log</h1>
                 </div>
-                <button class="btn btn-primary ">Clear History</button>
+                <button id="clear-history-btn" class="btn btn-primary ">Clear History</button>
             </div>
             <hr class="border-dashed border-gray-400">
+            <div id="Activity-Log" class=" mt-6 w-5/6 mx-auto">
+                
+            </div>
         </aside>
 
     </main>
